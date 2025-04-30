@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>Breezed HTML Bootstrap Template</title>
+
+<!--
+
+Breezed Template
+
+https://templatemo.com/tm-543-breezed
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/dinoqqq/simple-popup@master/dist/jquery.simple-popup.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/dinoqqq/simple-popup@master/dist/jquery.simple-popup.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+      
+  </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row" >
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            콕트래픽
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#FAQ">FAQ</a></li>
+                            
+                            <!--li class="submenu">
+                                <a href="javascript:;">Drop Down</a>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Features</a></li>
+                                    <li><a href="">FAQ's</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                            </li-->
+                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
+                            <!--div class="search-icon">
+                                <a href="#search"><i class="fa fa-search"></i></a>
+                            </div-->
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    
+    <!-- ***** Search Area ***** -->
+    <!--div id="search">
+        <button type="button" class="close">×</button>
+        <form id="contact" action="#" method="get">
+            <fieldset>
+                <input type="search" name="q" placeholder="SEARCH KEYWORD(s)" aria-label="Search through site content">
+            </fieldset>
+            <fieldset>
+                <button type="submit" class="main-button">Search</button>
+            </fieldset>
+        </form>
+    </div-->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item">
+            <div class="img-fill">
+                <img src="assets/images/image2.png" alt="">
+                <div class="text-content">
+                  <h3>배드민턴 치러 갔는데 자리가 없어서 돌아온 적 있으신가요?    </h3>
+                  <h5>이젠 가기전에 콕트래픽으로 확인하세요!</h5>
+                </div>
+            </div>
+          </div>
+          
+          <!--div class="item">
+            <div class="img-fill">
+                <img src="assets/images/slide-02.jpg" alt="">
+                <div class="text-content">
+                  <h3>Integrated Marketing Media</h3>
+                  <h5>Best Digital Marketing</h5>
+                  <a href="#" class="main-stroked-button">Read More</a>
+                  <a href="#" class="main-filled-button">Take Action</a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="img-fill">
+                <img src="assets/images/slide-03.jpg" alt="">
+                <div class="text-content">
+                  <h3>High Performance</h3>
+                  <h5>Robust and Speedy</h5>
+                  <a href="#" class="main-stroked-button">Learn More</a>
+                  <a href="#" class="main-filled-button">Get It Now</a>
+                </div>
+            </div>
+          </div-->
+
+        </div>
+    </div>
+    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h2>ABOUT</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>배드민턴 체육관, 이제는 혼잡도 확인 후 출발하세요!</h4>
+                            <p>직접 체육관에 갔는데 사람이 너무 많아서 곤란하거나, 입장조차 하지 못했던 경험이 있으신가요? </p>
+                            <p>
+                                <strong>콕트래픽</strong>은 배드민턴 체육관의 위치와 혼잡도를 실시간으로 확인할 수 있는 앱입니다.
+                            </p> 
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>콕트래픽 활용 방법</h4>
+                            <p> <strong>콕트래픽</strong> 앱 내의 지도에서 체육관을 클릭하거나 검색하면, 해당 체육관의 <strong>현재 입장 인원</strong>과 <strong>정원</strong>을 실시간으로 확인할 수 있어요.
+                            </p>
+                            <p> 여러 체육관의 혼잡도를 비교해 가장 쾌적한 환경에서 배드민턴을 즐기세요.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>콕트래픽 설치 방법</h4>
+                            <p>콕트래픽은 현재 모바일앱 개발중이며 아직 출시 전입니다.</p>
+                            <p><strong> 페이지 아래에 이메일을 남겨주시면 가장 먼저 알려드립니다!</strong></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Area Ends ***** -->
+
+    <section class="section" id="FAQ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h2>FAQ (자주묻는질문)</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4> 📅 콕트래픽 앱은 언제 출시되나요?</h4>
+                            <p>앱은 현재 개발 중이며, 약 3개월 이내 출시 예정입니다. 아래에 이메일을 남기면 출시 안내 메일을 발송합니다!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>📱 앱은 어떻게 사용하나요?</h4>
+                            <p> 현재 위치를 기반으로 주변 체육관 정보를 확인하거나, 원하는 체육관을 검색하여 실시간 이용 가능 인원을 확인할 수 있습니다!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>💰 앱은 무료로 사용할 수 있나요?</h4>
+                            <p>앱의 모든 기능은 무료로 제공됩니다!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>🗺️ 앱은 어떤 지역의 체육관 정보를 제공하나요?</h4>
+                            <p> 콕트래픽은 서울 및 수도권 지역의 모든 배드민턴 체육관 정보를 제공합니다!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Features Big Item Start ***** -->
+    <!--section class="section" id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h6>Subscribe Newsletters</h6>
+                        <h2>Don’t miss this chance!</h2>
+                    </div>
+                    <div class="subscribe-content">
+                        <p>Vivamus suscipit blandit nibh, in cursus mi. Proin vel blandit metus, et auctor elit. Vivamus tincidunt tristique convallis. Ut nec odio vel arcu euismod semper nec ac sem.</p>
+                        <div class="subscribe-form">
+                            <form id="subscribe-now" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12">
+                                      <fieldset>
+                                        <input name="email" type="text" id="email" placeholder="Enter your email..." required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                      <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Subscribe Now</button>
+                                      </fieldset>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section-->
+    <!-- ***** Features Big Item End ***** -->
+
+    
+
+    <!-- ***** FAQ Area Starts ***** -->
+    <!--section class="section" id="FAQ">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="section-heading">
+                    <h6>Our FAQ</h6>
+                    <h2>Some of our latest FAQ</h2>
+                </div>
+                <div class="filters">
+                    <ul>
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".des">Web Design</li>
+                        <li data-filter=".dev">Web Development</li>
+                        <li data-filter=".gra">Graphics</li>
+                        <li data-filter=".tsh">Artworks</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="filters-content">
+                    <div class="row grid">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
+                          <div class="item">
+                            <a href="assets/images/project-big-item-01.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-01.jpg" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
+                          <div class="item">
+                            <a href="assets/images/project-big-item-02.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-02.jpg" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all gra">
+                          <div class="item">
+                            <a href="assets/images/project-big-item-03.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-03.jpg" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all tsh">
+                          <div class="item">
+                            <a href="assets/images/project-big-item-04.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-04.jpg" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
+                          <div class="item">
+                            <a href="assets/images/project-big-item-05.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-05.jpg" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
+                          <div class="item">
+                            <a href="assets/images/project-big-item-06.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-06.jpg" alt=""></a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section-->
+
+    
+
+
+  
+
+    
+    <!-- ***** FAQ Area Ends ***** -->
+    <!-- ***** Testimonials Starts ***** -->
+    <!--section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h6>Digital Team</h6>
+                        <h2>young and talented members</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item author-item">
+                            <div class="member-thumb">
+                                <img src="assets/images/member-item-01.jpg" alt="">
+                                <div class="hover-effect">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>.01 White Cheese</h4>
+                            <span>Digital Marketer</span>
+                        </div>
+                        <div class="item author-item">
+                            <div class="member-thumb">
+                                <img src="assets/images/member-item-04.jpg" alt="">
+                                <div class="hover-effect">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>.02 Snow Mary</h4>
+                            <span>Site Analyst</span>
+                        </div>
+                        <div class="item author-item">
+                            <div class="member-thumb">
+                                <img src="assets/images/member-item-02.jpg" alt="">
+                                <div class="hover-effect">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>.03 Johnny Egg</h4>
+                            <span>Digital Influencer</span>
+                        </div>
+                        <div class="item author-item">
+                            <div class="member-thumb">
+                                <img src="assets/images/member-item-05.jpg" alt="">
+                                <div class="hover-effect">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>.04 Catherine Phyu</h4>
+                            <span>Co Founder</span>
+                        </div>
+                        <div class="item author-item">
+                            <div class="member-thumb">
+                                <img src="assets/images/member-item-03.jpg" alt="">
+                                <div class="hover-effect">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>.05 Shao Lynn</h4>
+                            <span>Chief Marketing</span>
+                        </div>
+                        
+                        <div class="item author-item">
+                            <div class="member-thumb">
+                                <img src="assets/images/member-item-04.jpg" alt="">
+                                <div class="hover-effect">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>.06 Emma Honey</h4>
+                            <span>Digital Influencer</span>
+                        </div>
+                        
+                        <div class="item author-item">
+                            <div class="member-thumb">
+                                <img src="assets/images/member-item-06.jpg" alt="">
+                                <div class="hover-effect">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>.07 Oliva Sofie</h4>
+                            <span>Website Analyst</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Ends ***** -->
+    
+    <!-- ***** Contact Us Area Starts ***** -->
+    <!--section class="section" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>Contact Us</h6>
+                            <h2>Feel free to keep in touch with us!</h2>
+                        </div>
+                        <ul class="contact-info">
+                            <li><img src="assets/images/contact-info-01.png" alt="">010-020-0860</li>
+                            <li><img src="assets/images/contact-info-02.png" alt="">info@company.com</li>
+                            <li><img src="assets/images/contact-info-03.png" alt="">www.company.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-12">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="get">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" id="name" placeholder="Your Name *" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="phone" type="text" id="phone" placeholder="Your Phone" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" id="email" placeholder="Your Email *" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="subject" type="text" id="subject" placeholder="Subject">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button-icon">Send Message Now <i class="fa fa-arrow-right"></i></button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area Ends ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <!--div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="left-text-content">
+                        <p>Copyright &copy; 2020 Breezed Co., Ltd. 
+                        
+                        - Design: <a rel="nofollow noopener" href="https://templatemo.com">TemplateMo</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="right-text-content">
+                            <ul class="social-icons">
+                                <li><p>Follow Us</p></li>
+                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
+                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-twitter"></i></a></li>
+                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div-->
+ 
+        
+
+
+  
+        <section class="section" id="contact-us">
+                <center>
+                    <h4>이메일을 남겨주시면 서비스가 런칭될 때 메일을 드리겠습니다. </h4>
+                    <input id="submit-email" type="email" placeholder="알림을 받으실 이메일" /> <br><br>
+                    <h5>서비스에 대한 의견을 남겨주세요 </h5>
+                    <textarea id="submit-advice" name="Text1" cols="40" rows="5" placeholder="서비스에 대한 질문이나 의견을 남겨주세요"></textarea><br>
+                    <button style="width:350px;" id="submit">제출 </button>
+                </center>
+        </section>
+    </footer>
+    <div id="popup" style="display:none;">
+        <h1>감사합니다. </h1>
+        <p> 입력하신 이메일로 출시 메일을 보내드리겠습니다  </p>
+    </div>
+    
+
+ 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.css" rel="stylesheet">
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+    <script type="application/javascript">
+					var ip = "null";
+					function getIP(json) {
+					    console.log(json);
+					    try {
+							ip = json.ip;
+					    } catch (e) {
+							ip = 'unknown';
+					    }
+					    return;
+					}
+			"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Git\Git CMD.lnk"		</script>
+					<script type="application/javascript" src="https://jsonip.com?format=jsonp&callback=getIP"></script>
+
+                
+
+                    <script type="application/javascript">
+                        var ip = "null";
+                        function getIP(json) {
+                            console.log(json);
+                            try {
+                                ip = json.ip;
+                            } catch (e) {
+                                ip = 'unknown';
+                            }
+                            return;
+                        }
+                        </script>
+                        <script type="application/javascript" src="https://jsonip.com?format=jsonp&callback=getIP"></script>
+    <script>
+
+        // Sam pading value to start with 0. eg: 01, 02, .. 09, 10, ..
+				function padValue(value) {
+					return (value < 10) ? "0" + value : value;
+				}
+
+				function getTimeStamp() {
+					const date = new Date();
+
+					const year = date.getFullYear();
+					const month = date.getMonth() + 1;
+					const day = date.getDate();
+					const hours = date.getHours();
+					const minutes = date.getMinutes();
+					const seconds = date.getSeconds();
+
+					const formattedDate = `${padValue(year)}-${padValue(month)}-${padValue(day)} ${padValue(hours)}:${padValue(minutes)}:${padValue(seconds)}`;
+
+					return formattedDate;
+				}
+    </script>                    
+
+    <script>
+        // 쿠키에서 값을 가져오는 함수
+				function getCookieValue(name) {
+					const value = "; " + document.cookie;
+					const parts = value.split("; " + name + "=");
+					if (parts.length === 2) {
+						return parts.pop().split(";").shift();
+					}
+				}
+
+				// 쿠키에 값을 저장하는 함수
+				function setCookieValue(name, value, days) {
+					let expires = "";
+					if (days) {
+						const date = new Date();
+						date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+						expires = "; expires=" + date.toUTCString();
+					}
+					document.cookie = name + "=" + (value || "") + expires + "; path=/";
+				}
+
+				function getUVfromCookie() {
+					// 6자리 임의의 문자열 생성
+					const hash = Math.random().toString(36).substring(2, 8).toUpperCase();
+					// 쿠키에서 기존 해시 값을 가져옴
+					const existingHash = getCookieValue("user");
+					// 기존 해시 값이 없으면, 새로운 해시 값을 쿠키에 저장
+					if (!existingHash) {
+						setCookieValue("user", hash, 180); // 쿠키 만료일은 6개월 
+						return hash;
+					} else {
+						// 기존 해시 값이 있으면, 기존 값을 반환
+						return existingHash;
+					}
+				}
+    
+    </script>
+
+
+    <script>
+        /*utm 가져오기*/
+        var queryString = location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const utm = urlParams.get("utm")
+
+        var mobile = 'desktop';
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			// true for mobile device
+			mobile = 'mobile';
+				}
+
+        /* data를 만들 땐 모든 field가 들어 있어야 함 */
+        var data = JSON.stringify(
+					               {"id": getUVfromCookie(),
+							"landingUrl":window.location.href, 
+							"ip":ip, 
+							"referer":document.referrer,
+							"time_stamp":getTimeStamp(), 
+							"utm":utm,
+							"device":mobile}
+							);
+
+                        
+				$(document).ready(function () {
+                    // alert("히히");
+
+					addrScript = 'https://script.google.com/macros/s/AKfycbzuaPy6kOuy50d1yW2l24ketejqKd01QtSFg8o0qrInXyuj54LSXNDgH2t55u6qcPZmOA/exec';
+
+                    axios.get(addrScript+'?action=insert&table=visitors&data='+data)
+				    .then(response => {
+							console.log(JSON.stringify(response));
+						})
+						.catch(error => {
+							if (error.response) {
+								// 서버가 2xx 범위를 벗어난 상태 코드로 응답한 경우
+								console.log(error.response.data);
+								console.log(error.response.status);
+								console.log(error.response.headers);
+							} else if (error.request) {
+								// 요청이 전송되었지만 응답을 받지 못한 경우
+								console.log(error.request);
+							} else {
+								// 요청 설정 중에 오류가 발생한 경우
+								console.log('Error', error.message);
+							}
+							console.log(error.config);
+						});
+                    $("#submit").on("click", function () {
+                        
+                        const email = $("#submit-email").val();
+                        const advice = $("#submit-advice").val();
+                        $.busyLoadFull("show");
+                        function validateEmail(email) {
+                            var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                            return re.test(email);
+                        }
+                
+                        if (email == '' || !validateEmail(email)) {
+                            alert("이메일이 유효하지 않습니다다. ");
+                            $.busyLoadFull("hide");
+                            return;
+                        }
+                
+                        var finalData = JSON.stringify({
+                        "id": getUVfromCookie(),
+                            "email": email,
+                            "advice": advice
+                        })
+                        
+                        axios.get(addrScript+'?action=insert&table=tab_final&data=' + finalData)
+                            .then(response => {
+                            console.log(response.data.data);
+                            $.busyLoadFull("hide");
+                            $.fn.simplePopup({ type: "html", htmlSelector: "#popup" });
+                            // alert(JSON.stringify(response));
+                            $('#submit-email').val('');
+                            $('#submit-advice').val('');
+                            
+                            })
+				    });
+				
+                    
+				    });
+    </script>
+
+    <button id="go-to-contact-us" style="position: fixed; bottom: 50px; right: 50px; background-color: #000000; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 14px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2); z-index: 9999;">
+        ✉️ 출시 알림받기
+    </button>
+
+    <script>
+        $(document).ready(function() {
+          $('#go-to-contact-us').click(function(e) {
+            e.preventDefault(); // 기본 앵커 동작 막기
+            $('html, body').animate({
+              scrollTop: $('#contact-us').offset().top
+            }, 800); // 800ms = 0.8초
+          });
+        });
+    </script>
+
+
+
+
+
+    
+    </body>
+</html>
