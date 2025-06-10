@@ -63,7 +63,14 @@ https://templatemo.com/tm-543-breezed
           scroll-behavior: smooth;
         }
     </style>
-      
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee50dcc6ebd34fa29fb9cca47fd1b052&autoload=false"></script>
+    <style>
+      #map {
+        width: 100%;
+        height: 300px;
+      }
+    </style>
   </head>
     
     <body>
@@ -89,26 +96,18 @@ https://templatemo.com/tm-543-breezed
                         <a href="index.html" class="logo">
                             콕트래픽
                         </a>
+                        
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#map">MAP</a></li>
                             <li class="scroll-to-section"><a href="#FAQ">FAQ</a></li>
                             
-                            <!--li class="submenu">
-                                <a href="javascript:;">Drop Down</a>
-                                <ul>
-                                    <li><a href="">About Us</a></li>
-                                    <li><a href="">Features</a></li>
-                                    <li><a href="">FAQ's</a></li>
-                                    <li><a href="">Blog</a></li>
-                                </ul>
-                            </li-->
+
                             <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
-                            <!--div class="search-icon">
-                                <a href="#search"><i class="fa fa-search"></i></a>
-                            </div-->
+
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -121,18 +120,7 @@ https://templatemo.com/tm-543-breezed
     </header>
     <!-- ***** Header Area End ***** -->
     
-    <!-- ***** Search Area ***** -->
-    <!--div id="search">
-        <button type="button" class="close">×</button>
-        <form id="contact" action="#" method="get">
-            <fieldset>
-                <input type="search" name="q" placeholder="SEARCH KEYWORD(s)" aria-label="Search through site content">
-            </fieldset>
-            <fieldset>
-                <button type="submit" class="main-button">Search</button>
-            </fieldset>
-        </form>
-    </div-->
+
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner header-text" id="top">
@@ -148,37 +136,36 @@ https://templatemo.com/tm-543-breezed
             </div>
           </div>
           
-          <!--div class="item">
-            <div class="img-fill">
-                <img src="assets/images/slide-02.jpg" alt="">
-                <div class="text-content">
-                  <h3>Integrated Marketing Media</h3>
-                  <h5>Best Digital Marketing</h5>
-                  <a href="#" class="main-stroked-button">Read More</a>
-                  <a href="#" class="main-filled-button">Take Action</a>
-                </div>
-            </div>
-          </div>
-          
-          <div class="item">
-            <div class="img-fill">
-                <img src="assets/images/slide-03.jpg" alt="">
-                <div class="text-content">
-                  <h3>High Performance</h3>
-                  <h5>Robust and Speedy</h5>
-                  <a href="#" class="main-stroked-button">Learn More</a>
-                  <a href="#" class="main-filled-button">Get It Now</a>
-                </div>
-            </div>
-          </div-->
+
 
         </div>
     </div>
+    
+    <script>
+        kakao.maps.load(function () {
+          const container = document.getElementById('map');
+          const options = {
+            center: new kakao.maps.LatLng(37.5665, 126.9780),
+            level: 6
+          };
+          const map = new kakao.maps.Map(container, options);
+        });
+    </script>
+
+
+
     <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
     <!-- ***** Main Banner Area End ***** -->
 
+
+
+      
+
     <!-- ***** About Area Starts ***** -->
+
+
     <section class="section" id="about">
+        
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -197,7 +184,7 @@ https://templatemo.com/tm-543-breezed
                             <h4>배드민턴 체육관, 이제는 혼잡도 확인 후 출발하세요!</h4>
                             <p>직접 체육관에 갔는데 사람이 너무 많아서 곤란하거나, 입장조차 하지 못했던 경험이 있으신가요? </p>
                             <p>
-                                <strong>콕트래픽</strong>은 배드민턴 체육관의 위치와 혼잡도를 실시간으로 확인할 수 있는 앱입니다.
+                                <strong>콕트래픽</strong>은 배드민턴 체육관의 위치와 혼잡도를 실시간으로 확인할 수 있는 서비스입니다.
                             </p> 
                             
                         </div>
@@ -210,30 +197,222 @@ https://templatemo.com/tm-543-breezed
                         </div>
                         <div class="features-content">
                             <h4>콕트래픽 활용 방법</h4>
-                            <p> <strong>콕트래픽</strong> 앱 내의 지도에서 체육관을 클릭하거나 검색하면, 해당 체육관의 <strong>현재 입장 인원</strong>과 <strong>정원</strong>을 실시간으로 확인할 수 있어요.
+                            <p> <strong>콕트래픽</strong> 페이지 내의 지도에서 체육관을 클릭하면 해당 체육관의 <strong>현재 입장 인원</strong>과 <strong>정원</strong>을 실시간으로 확인할 수 있어요.
                             </p>
                             <p> 여러 체육관의 혼잡도를 비교해 가장 쾌적한 환경에서 배드민턴을 즐기세요.</p>
                             
                         </div>
                     </div>
                 </div>
-                <div class="col-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <img src="assets/images/badminton_icon.png" alt="">
-                        </div>
-                        <div class="features-content">
-                            <h4>콕트래픽 설치 방법</h4>
-                            <p>콕트래픽은 현재 모바일앱 개발중이며 아직 출시 전입니다.</p>
-                            <p><strong> 페이지 아래에 이메일을 남겨주시면 가장 먼저 알려드립니다!</strong></p>
-                            
-                        </div>
-                    </div>
-                </div>
+              
             </div>
         </div>
     </section>
     <!-- ***** About Area Ends ***** -->
+
+    <section class="section" id="map-section">
+      <div class="container">
+        <h2 class="text-center mb-4">콕트래픽 바로 이용하기</h2>
+    
+        <!-- 지역 필터 -->
+        <div class="mb-4 text-center">
+          <label for="district-filter" class="me-2">구 선택:</label>
+          <select id="district-filter" class="form-control d-inline-block" style="width: 200px;">
+            <option value="all">전체</option>
+            <option value="강동구">강동구</option>
+            <option value="강남구">강남구</option>
+            <option value="송파구">송파구</option>
+          </select>
+        </div>
+    
+        <div class="row">
+          <!-- 지도 -->
+          <div class="col-md-8">
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <p class="text-muted mt-2" style="text-align: center;">
+              지도에서 원하는 체육관을 클릭하면 상세정보를 볼 수 있습니다.
+            </p>
+          </div>
+          
+    
+          <!-- 체육관 목록 -->
+          <div class="col-md-4">
+            <h5>체육관 목록</h5>
+            <ul class="list-group" id="gym-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      kakao.maps.load(function () {
+        const mapContainer = document.getElementById('map');
+        const mapOption = {
+          center: new kakao.maps.LatLng(37.542085, 127.129748),
+          level: 5
+        };
+        const map = new kakao.maps.Map(mapContainer, mapOption);
+        const listContainer = document.getElementById('gym-list');
+        const filterSelect = document.getElementById('district-filter');
+    
+        
+        const gyms = [
+          {
+            id: 1,
+            name: '송파배드민턴체육관',
+            district: '송파구',
+            lat: 37.493779,
+            lng: 127.138297,
+            people: 50,
+            capacity: 96,
+            courts: 8,
+            openDays: '매일 06:00–21:30 (매월 둘째, 넷째 주 월요일 휴관)'
+          },
+          {
+            id: 2,
+            name: '풍납배드민턴장',
+            district: '송파구',
+            lat: 37.530554,
+            lng: 127.110224,
+            people: 11,
+            capacity: 48,
+            courts: 4,
+            openDays: '매일 06:00–21:30'
+          },
+          {
+            id: 3,
+            name: '해공체육문화센터',
+            district: '강동구',
+            lat: 37.542068,
+            lng: 127.129887,
+            people: 30,
+            capacity: 72,   // 코트당 12명 × 4코트 가정
+            courts: 6,
+            openDays: '월~토 06:00–22:00, 일요일 휴관'
+          },
+          {
+            id: 4,
+            name: '매봉산실내배드민턴장',
+            district: '강남구',
+            lat: 37.485962,
+            lng: 127.042288,
+            people: 40,
+            capacity: 48,
+            courts: 4,
+            openDays: '화~일 06:00–22:00'
+          },
+          {
+            id: 5,
+            name: '샘터배드민턴장',
+            district: '강동구',
+            lat: 37.561779,
+            lng: 127.157332,
+            people: 50 ,
+            capacity: 60,   // 코트당 12명 × 4코트 가정
+            courts: 5,
+            openDays: '화~일 06:00–22:00, 월요일 휴관'
+          },
+          {
+            id: 6,
+            name: '일자산제1체육관',
+            district: '강동구',
+            lat: 37.533044,
+            lng: 127.151175,
+            people: 60,
+            capacity: 96,
+            courts: 8,
+            openDays: '화~일 06:00–21:50, 월요일 휴관'
+          },
+          {
+            id: 7,
+            name: '온조대왕문화체육관',
+            district: '강동구',
+            lat: 37.556720,
+            lng: 127.157435,
+            people: 25,
+            capacity: 72,
+            courts: 6,
+            openDays: '월~금 06:00–22:00,토 06:00-18:00, 일요일 휴관'
+          }
+        ];
+
+    
+        let currentMarkers = [];
+    
+        function clearMarkers() {
+          currentMarkers.forEach(marker => marker.setMap(null));
+          currentMarkers = [];
+        }
+    
+        function renderGyms(filter) {
+          clearMarkers();
+          listContainer.innerHTML = '';
+
+          const filtered = gyms.filter(gym => filter === 'all' || gym.district === filter);
+
+          filtered.forEach(gym => {
+            const ratio = gym.people / gym.capacity;
+            let color = 'green';
+            if (ratio > 0.8) color = 'red';
+            else if (ratio > 0.5) color = 'orange';
+
+            const position = new kakao.maps.LatLng(gym.lat, gym.lng);
+            const marker = new kakao.maps.Marker({ map, position });
+            currentMarkers.push(marker);
+
+            const infowindow = new kakao.maps.InfoWindow({
+              content: `
+                <div style="padding:5px;">
+                  <strong>${gym.name}</strong><br>
+                  <span style="color:${color}; font-weight:bold;">
+                    현재 인원: ${gym.people} / ${gym.capacity}명
+                  </span>
+                </div>`
+            });
+
+            kakao.maps.event.addListener(marker, 'click', () => {
+              infowindow.open(map, marker);
+              setTimeout(() => {
+                window.location.href = `/gym.html?id=${gym.id}`;
+              }, 1000);
+            });
+
+            const li = document.createElement('li');
+            li.className = 'list-group-item';
+            li.innerHTML = `
+              <span style="color:${color}; font-weight:bold;">
+                ${gym.name} (${gym.people} / ${gym.capacity}명)
+              </span>
+            `;
+            li.style.cursor = 'pointer';
+            li.addEventListener('click', () => {
+              map.setCenter(position);
+              infowindow.open(map, marker);
+            });
+
+            listContainer.appendChild(li);
+          });
+
+          if (filtered.length > 0) {
+            map.setCenter(new kakao.maps.LatLng(filtered[0].lat, filtered[0].lng));
+          }
+        }
+        
+
+    
+        filterSelect.addEventListener('change', (e) => {
+          renderGyms(e.target.value);
+        });
+    
+        // 첫 실행
+        renderGyms('all');
+      });
+    </script>
+    
+
+        
+
+
 
     <section class="section" id="FAQ">
         <div class="container">
@@ -251,8 +430,8 @@ https://templatemo.com/tm-543-breezed
                             <img src="assets/images/badminton_icon.png" alt="">
                         </div>
                         <div class="features-content">
-                            <h4> 📅 콕트래픽 앱은 언제 출시되나요?</h4>
-                            <p>앱은 현재 개발 중이며, 약 3개월 이내 출시 예정입니다. 아래에 이메일을 남기면 출시 안내 메일을 발송합니다!</p>
+                            <h4> 📅 콕트래픽은 언제 출시되나요?</h4>
+                            <p>서비스를 현재 개발 중이며, 약 2개월 이내 정식 출시 예정입니다. </p>
                             
                         </div>
                     </div>
@@ -263,8 +442,8 @@ https://templatemo.com/tm-543-breezed
                             <img src="assets/images/badminton_icon.png" alt="">
                         </div>
                         <div class="features-content">
-                            <h4>📱 앱은 어떻게 사용하나요?</h4>
-                            <p> 현재 위치를 기반으로 주변 체육관 정보를 확인하거나, 원하는 체육관을 검색하여 실시간 이용 가능 인원을 확인할 수 있습니다!</p>
+                            <h4>📱 콕트래픽은 어떻게 사용하나요?</h4>
+                            <p> 지도상의 원하는 체육관 정보를 확인하거나, 원하는 지역구 체육관을 검색하여 실시간 이용 인원을 확인할 수 있습니다!</p>
                             
                         </div>
                     </div>
@@ -275,8 +454,8 @@ https://templatemo.com/tm-543-breezed
                             <img src="assets/images/badminton_icon.png" alt="">
                         </div>
                         <div class="features-content">
-                            <h4>💰 앱은 무료로 사용할 수 있나요?</h4>
-                            <p>앱의 모든 기능은 무료로 제공됩니다!</p>
+                            <h4>💰 콕트래픽은 무료로 사용할 수 있나요?</h4>
+                            <p>콕트래픽의 모든 기능은 무료로 제공됩니다!</p>
                             
                         </div>
                     </div>
@@ -287,8 +466,9 @@ https://templatemo.com/tm-543-breezed
                             <img src="assets/images/badminton_icon.png" alt="">
                         </div>
                         <div class="features-content">
-                            <h4>🗺️ 앱은 어떤 지역의 체육관 정보를 제공하나요?</h4>
-                            <p> 콕트래픽은 서울 및 수도권 지역의 모든 배드민턴 체육관 정보를 제공합니다!</p>
+                            <h4>🗺️ 콕트래픽은 어떤 지역의 체육관 정보를 제공하나요?</h4>
+                            <p> 콕트래픽은 현재 송파, 강동, 강남구의 체육관 정보를 제공할 예정이며, 추후 더 많은 지역으로 확장할 예정입니다! </p>
+                            </p>
                             
                         </div>
                     </div>
@@ -296,343 +476,11 @@ https://templatemo.com/tm-543-breezed
             </div>
         </div>
     </section>
-
-    <!-- ***** Features Big Item Start ***** -->
-    <!--section class="section" id="subscribe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="section-heading">
-                        <h6>Subscribe Newsletters</h6>
-                        <h2>Don’t miss this chance!</h2>
-                    </div>
-                    <div class="subscribe-content">
-                        <p>Vivamus suscipit blandit nibh, in cursus mi. Proin vel blandit metus, et auctor elit. Vivamus tincidunt tristique convallis. Ut nec odio vel arcu euismod semper nec ac sem.</p>
-                        <div class="subscribe-form">
-                            <form id="subscribe-now" action="" method="get">
-                                <div class="row">
-                                    <div class="col-md-8 col-sm-12">
-                                      <fieldset>
-                                        <input name="email" type="text" id="email" placeholder="Enter your email..." required="">
-                                      </fieldset>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                      <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">Subscribe Now</button>
-                                      </fieldset>
-                                    </div>
-                                    
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section-->
-    <!-- ***** Features Big Item End ***** -->
-
-    
-
-    <!-- ***** FAQ Area Starts ***** -->
-    <!--section class="section" id="FAQ">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="section-heading">
-                    <h6>Our FAQ</h6>
-                    <h2>Some of our latest FAQ</h2>
-                </div>
-                <div class="filters">
-                    <ul>
-                        <li class="active" data-filter="*">All</li>
-                        <li data-filter=".des">Web Design</li>
-                        <li data-filter=".dev">Web Development</li>
-                        <li data-filter=".gra">Graphics</li>
-                        <li data-filter=".tsh">Artworks</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-9">
-                <div class="filters-content">
-                    <div class="row grid">
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-01.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-01.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-02.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-02.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all gra">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-03.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-03.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all tsh">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-04.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-04.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-05.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-05.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-06.jpg" data-lightbox="image-1" data-title="Our FAQ"><img src="assets/images/project-item-06.jpg" alt=""></a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section-->
-
-    
-
-
-  
-
-    
-    <!-- ***** FAQ Area Ends ***** -->
-    <!-- ***** Testimonials Starts ***** -->
-    <!--section class="section" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h6>Digital Team</h6>
-                        <h2>young and talented members</h2>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-01.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.01 White Cheese</h4>
-                            <span>Digital Marketer</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-04.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.02 Snow Mary</h4>
-                            <span>Site Analyst</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-02.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.03 Johnny Egg</h4>
-                            <span>Digital Influencer</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-05.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.04 Catherine Phyu</h4>
-                            <span>Co Founder</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-03.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.05 Shao Lynn</h4>
-                            <span>Chief Marketing</span>
-                        </div>
-                        
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-04.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.06 Emma Honey</h4>
-                            <span>Digital Influencer</span>
-                        </div>
-                        
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-06.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.07 Oliva Sofie</h4>
-                            <span>Website Analyst</span>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Testimonials Ends ***** -->
-    
-    <!-- ***** Contact Us Area Starts ***** -->
-    <!--section class="section" id="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                            <h6>Contact Us</h6>
-                            <h2>Feel free to keep in touch with us!</h2>
-                        </div>
-                        <ul class="contact-info">
-                            <li><img src="assets/images/contact-info-01.png" alt="">010-020-0860</li>
-                            <li><img src="assets/images/contact-info-02.png" alt="">info@company.com</li>
-                            <li><img src="assets/images/contact-info-03.png" alt="">www.company.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-xs-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="get">
-                          <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Your Name *" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="phone" type="text" id="phone" placeholder="Your Phone" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="email" id="email" placeholder="Your Email *" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="subject" type="text" id="subject" placeholder="Subject">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Send Message Now <i class="fa fa-arrow-right"></i></button>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Contact Us Area Ends ***** -->
-    
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <!--div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xs-12">
-                    <div class="left-text-content">
-                        <p>Copyright &copy; 2020 Breezed Co., Ltd. 
-                        
-                        - Design: <a rel="nofollow noopener" href="https://templatemo.com">TemplateMo</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xs-12">
-                    <div class="right-text-content">
-                            <ul class="social-icons">
-                                <li><p>Follow Us</p></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-twitter"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-        </div-->
- 
-        
-
 
   
         <section class="section" id="contact-us">
                 <center>
-                    <h4>이메일을 남겨주시면 서비스가 런칭될 때 메일을 드리겠습니다. </h4>
+                    <h4>이메일을 남겨주시면 서비스가 정식 런칭될 때 메일을 드리겠습니다. </h4>
                     <input id="submit-email" type="email" placeholder="알림을 받으실 이메일" /> <br><br>
                     <h5>서비스에 대한 의견을 남겨주세요 </h5>
                     <textarea id="submit-advice" name="Text1" cols="40" rows="5" placeholder="서비스에 대한 질문이나 의견을 남겨주세요"></textarea><br>

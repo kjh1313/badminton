@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>체육관 상세 정보</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f9f6;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      max-width: 500px;
+      margin: 60px auto;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      border: none;
+      border-radius: 1rem;
+      background-color: #fff;
+    }
+    .card-header {
+      background: #69b36d;
+      color: white;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 1rem;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+    .icon {
+      font-size: 3rem;
+      color: #69b36d;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .list-group-item {
+      font-size: 1.1rem;
+      border: none;
+    }
+    .badge-custom {
+      background-color: #ffce56;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      🏸 체육관 정보
+    </div>
+    <div class="card-body">
+      <div class="icon text-center">🏸</div>
+      <h3 class="card-title text-center" id="gym-name">체육관명</h3>
+      <ul class="list-group list-group-flush mt-4">
+        <li class="list-group-item"><strong>현재 인원:</strong> <span id="people"></span></li>
+        <li class="list-group-item"><strong>정원:</strong> <span id="capacity"></span></li>
+        <li class="list-group-item"><strong>코트 수:</strong> <span id="courts"></span></li>
+        <li class="list-group-item"><strong>운영 요일:</strong> <span id="openDays"></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // 예시 체육관 데이터
+    const gyms = [
+          {
+            id: 1,
+            name: '송파배드민턴체육관',
+            district: '송파구',
+            lat: 37.493779,
+            lng: 127.138297,
+            people: 50,
+            capacity: 96,
+            courts: 8,
+            openDays: '매일 06:00–21:30 (매월 둘째, 넷째 주 월요일 휴관)'
+          },
+          {
+            id: 2,
+            name: '풍납배드민턴장',
+            district: '송파구',
+            lat: 37.530554,
+            lng: 127.110224,
+            people: 11,
+            capacity: 48,
+            courts: 4,
+            openDays: '매일 06:00–21:30'
+          },
+          {
+            id: 3,
+            name: '해공체육문화센터',
+            district: '강동구',
+            lat: 37.542068,
+            lng: 127.129887,
+            people: 30,
+            capacity: 72,   // 코트당 12명 × 4코트 가정
+            courts: 6,
+            openDays: '월~토 06:00–22:00, 일요일 휴관'
+          },
+          {
+            id: 4,
+            name: '매봉산실내배드민턴장',
+            district: '강남구',
+            lat: 37.485962,
+            lng: 127.042288,
+            people: 40,
+            capacity: 48,
+            courts: 4,
+            openDays: '화~일 06:00–22:00'
+          },
+          {
+            id: 5,
+            name: '샘터배드민턴장',
+            district: '강동구',
+            lat: 37.561779,
+            lng: 127.157332,
+            people: 50 ,
+            capacity: 60,   // 코트당 12명 × 4코트 가정
+            courts: 5,
+            openDays: '화~일 06:00–22:00, 월요일 휴관'
+          },
+          {
+            id: 6,
+            name: '일자산제1체육관',
+            district: '강동구',
+            lat: 37.533044,
+            lng: 127.151175,
+            people: 60,
+            capacity: 96,
+            courts: 8,
+            openDays: '화~일 06:00–21:50, 월요일 휴관'
+          },
+          {
+            id: 7,
+            name: '온조대왕문화체육관',
+            district: '강동구',
+            lat: 37.556720,
+            lng: 127.157435,
+            people: 25,
+            capacity: 72,
+            courts: 6,
+            openDays: '월~금 06:00–22:00,토 06:00-18:00, 일요일 휴관'
+          }
+        ];
+
+    // URL에서 id 값 가져오기
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id"));
+    const gym = gyms.find(g => g.id === id);
+
+    if (gym) {
+      document.getElementById('gym-name').textContent = gym.name;
+      document.getElementById('people').textContent = `${gym.people}명`;
+      document.getElementById('capacity').textContent = `${gym.capacity}명`;
+      document.getElementById('courts').textContent = `${gym.courts}개`;
+      document.getElementById('openDays').textContent = gym.openDays;
+    } else {
+      document.querySelector('.card-body').innerHTML = "<p class='text-center text-danger'>체육관 정보를 찾을 수 없습니다.</p>";
+    }
+  </script>
+
+</body>
+</html>
