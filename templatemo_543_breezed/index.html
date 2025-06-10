@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>콕트래픽</title>
+
+<!--
+
+Breezed Template
+
+https://templatemo.com/tm-543-breezed
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/dinoqqq/simple-popup@master/dist/jquery.simple-popup.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/dinoqqq/simple-popup@master/dist/jquery.simple-popup.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee50dcc6ebd34fa29fb9cca47fd1b052&autoload=false"></script>
+    <style>
+      #map {
+        width: 100%;
+        height: 300px;
+      }
+    </style>
+  </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row" >
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            콕트래픽
+                        </a>
+                        
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#map">MAP</a></li>
+                            <li class="scroll-to-section"><a href="#FAQ">FAQ</a></li>
+                            
+
+                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
+
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    
+
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item">
+            <div class="img-fill">
+                <img src="assets/images/image2.png" alt="">
+                <div class="text-content">
+                  <h3>배드민턴 치러 갔는데 자리가 없어서 돌아온 적 있으신가요?    </h3>
+                  <h5>이젠 가기전에 콕트래픽으로 확인하세요!</h5>
+                </div>
+            </div>
+          </div>
+          
+
+
+        </div>
+    </div>
+    
+    <script>
+        kakao.maps.load(function () {
+          const container = document.getElementById('map');
+          const options = {
+            center: new kakao.maps.LatLng(37.5665, 126.9780),
+            level: 6
+          };
+          const map = new kakao.maps.Map(container, options);
+        });
+    </script>
+
+
+
+    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Main Banner Area End ***** -->
+
+
+
+      
+
+    <!-- ***** About Area Starts ***** -->
+
+
+    <section class="section" id="about">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h2>ABOUT</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>배드민턴 체육관, 이제는 혼잡도 확인 후 출발하세요!</h4>
+                            <p>직접 체육관에 갔는데 사람이 너무 많아서 곤란하거나, 입장조차 하지 못했던 경험이 있으신가요? </p>
+                            <p>
+                                <strong>콕트래픽</strong>은 배드민턴 체육관의 위치와 혼잡도를 실시간으로 확인할 수 있는 서비스입니다.
+                            </p> 
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>콕트래픽 활용 방법</h4>
+                            <p> <strong>콕트래픽</strong> 페이지 내의 지도에서 체육관을 클릭하면 해당 체육관의 <strong>현재 입장 인원</strong>과 <strong>정원</strong>을 실시간으로 확인할 수 있어요.
+                            </p>
+                            <p> 여러 체육관의 혼잡도를 비교해 가장 쾌적한 환경에서 배드민턴을 즐기세요.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Area Ends ***** -->
+
+    <section class="section" id="map-section">
+      <div class="container">
+        <h2 class="text-center mb-4">콕트래픽 바로 이용하기</h2>
+    
+        <!-- 지역 필터 -->
+        <div class="mb-4 text-center">
+          <label for="district-filter" class="me-2">구 선택:</label>
+          <select id="district-filter" class="form-control d-inline-block" style="width: 200px;">
+            <option value="all">전체</option>
+            <option value="강동구">강동구</option>
+            <option value="강남구">강남구</option>
+            <option value="송파구">송파구</option>
+          </select>
+        </div>
+    
+        <div class="row">
+          <!-- 지도 -->
+          <div class="col-md-8">
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <p class="text-muted mt-2" style="text-align: center;">
+              지도에서 원하는 체육관을 클릭하면 상세정보를 볼 수 있습니다.
+            </p>
+          </div>
+          
+    
+          <!-- 체육관 목록 -->
+          <div class="col-md-4">
+            <h5>체육관 목록</h5>
+            <ul class="list-group" id="gym-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      kakao.maps.load(function () {
+        const mapContainer = document.getElementById('map');
+        const mapOption = {
+          center: new kakao.maps.LatLng(37.542085, 127.129748),
+          level: 5
+        };
+        const map = new kakao.maps.Map(mapContainer, mapOption);
+        const listContainer = document.getElementById('gym-list');
+        const filterSelect = document.getElementById('district-filter');
+    
+        
+        const gyms = [
+          {
+            id: 1,
+            name: '송파배드민턴체육관',
+            district: '송파구',
+            lat: 37.493779,
+            lng: 127.138297,
+            people: 50,
+            capacity: 96,
+            courts: 8,
+            openDays: '매일 06:00–21:30 (매월 둘째, 넷째 주 월요일 휴관)'
+          },
+          {
+            id: 2,
+            name: '풍납배드민턴장',
+            district: '송파구',
+            lat: 37.530554,
+            lng: 127.110224,
+            people: 11,
+            capacity: 48,
+            courts: 4,
+            openDays: '매일 06:00–21:30'
+          },
+          {
+            id: 3,
+            name: '해공체육문화센터',
+            district: '강동구',
+            lat: 37.542068,
+            lng: 127.129887,
+            people: 30,
+            capacity: 72,   // 코트당 12명 × 4코트 가정
+            courts: 6,
+            openDays: '월~토 06:00–22:00, 일요일 휴관'
+          },
+          {
+            id: 4,
+            name: '매봉산실내배드민턴장',
+            district: '강남구',
+            lat: 37.485962,
+            lng: 127.042288,
+            people: 40,
+            capacity: 48,
+            courts: 4,
+            openDays: '화~일 06:00–22:00'
+          },
+          {
+            id: 5,
+            name: '샘터배드민턴장',
+            district: '강동구',
+            lat: 37.561779,
+            lng: 127.157332,
+            people: 50 ,
+            capacity: 60,   // 코트당 12명 × 4코트 가정
+            courts: 5,
+            openDays: '화~일 06:00–22:00, 월요일 휴관'
+          },
+          {
+            id: 6,
+            name: '일자산제1체육관',
+            district: '강동구',
+            lat: 37.533044,
+            lng: 127.151175,
+            people: 60,
+            capacity: 96,
+            courts: 8,
+            openDays: '화~일 06:00–21:50, 월요일 휴관'
+          },
+          {
+            id: 7,
+            name: '온조대왕문화체육관',
+            district: '강동구',
+            lat: 37.556720,
+            lng: 127.157435,
+            people: 25,
+            capacity: 72,
+            courts: 6,
+            openDays: '월~금 06:00–22:00,토 06:00-18:00, 일요일 휴관'
+          }
+        ];
+
+    
+        let currentMarkers = [];
+    
+        function clearMarkers() {
+          currentMarkers.forEach(marker => marker.setMap(null));
+          currentMarkers = [];
+        }
+    
+        function renderGyms(filter) {
+          clearMarkers();
+          listContainer.innerHTML = '';
+
+          const filtered = gyms.filter(gym => filter === 'all' || gym.district === filter);
+
+          filtered.forEach(gym => {
+            const ratio = gym.people / gym.capacity;
+            let color = 'green';
+            if (ratio > 0.8) color = 'red';
+            else if (ratio > 0.5) color = 'orange';
+
+            const position = new kakao.maps.LatLng(gym.lat, gym.lng);
+            const marker = new kakao.maps.Marker({ map, position });
+            currentMarkers.push(marker);
+
+            const infowindow = new kakao.maps.InfoWindow({
+              content: `
+                <div style="padding:5px;">
+                  <strong>${gym.name}</strong><br>
+                  <span style="color:${color}; font-weight:bold;">
+                    현재 인원: ${gym.people} / ${gym.capacity}명
+                  </span>
+                </div>`
+            });
+
+            kakao.maps.event.addListener(marker, 'click', () => {
+              infowindow.open(map, marker);
+              setTimeout(() => {
+                window.location.href = `/gym.html?id=${gym.id}`;
+              }, 1000);
+            });
+
+            const li = document.createElement('li');
+            li.className = 'list-group-item';
+            li.innerHTML = `
+              <span style="color:${color}; font-weight:bold;">
+                ${gym.name} (${gym.people} / ${gym.capacity}명)
+              </span>
+            `;
+            li.style.cursor = 'pointer';
+            li.addEventListener('click', () => {
+              map.setCenter(position);
+              infowindow.open(map, marker);
+            });
+
+            listContainer.appendChild(li);
+          });
+
+          if (filtered.length > 0) {
+            map.setCenter(new kakao.maps.LatLng(filtered[0].lat, filtered[0].lng));
+          }
+        }
+        
+
+    
+        filterSelect.addEventListener('change', (e) => {
+          renderGyms(e.target.value);
+        });
+    
+        // 첫 실행
+        renderGyms('all');
+      });
+    </script>
+    
+
+        
+
+
+
+    <section class="section" id="FAQ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h2>FAQ (자주묻는질문)</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4> 📅 콕트래픽은 언제 출시되나요?</h4>
+                            <p>서비스를 현재 개발 중이며, 약 2개월 이내 정식 출시 예정입니다. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>📱 콕트래픽은 어떻게 사용하나요?</h4>
+                            <p> 지도상의 원하는 체육관 정보를 확인하거나, 원하는 지역구 체육관을 검색하여 실시간 이용 인원을 확인할 수 있습니다!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>💰 콕트래픽은 무료로 사용할 수 있나요?</h4>
+                            <p>콕트래픽의 모든 기능은 무료로 제공됩니다!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/badminton_icon.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>🗺️ 콕트래픽은 어떤 지역의 체육관 정보를 제공하나요?</h4>
+                            <p> 콕트래픽은 현재 송파, 강동, 강남구의 체육관 정보를 제공할 예정이며, 추후 더 많은 지역으로 확장할 예정입니다! </p>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+        <section class="section" id="contact-us">
+                <center>
+                    <h4>이메일을 남겨주시면 서비스가 정식 런칭될 때 메일을 드리겠습니다. </h4>
+                    <input id="submit-email" type="email" placeholder="알림을 받으실 이메일" /> <br><br>
+                    <h5>서비스에 대한 의견을 남겨주세요 </h5>
+                    <textarea id="submit-advice" name="Text1" cols="40" rows="5" placeholder="서비스에 대한 질문이나 의견을 남겨주세요"></textarea><br>
+                    <button style="width:350px;" id="submit">제출 </button>
+                </center>
+        </section>
+    </footer>
+    <div id="popup" style="display:none;">
+        <h1>감사합니다. </h1>
+        <p> 입력하신 이메일로 출시 메일을 보내드리겠습니다  </p>
+    </div>
+    
+
+ 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.css" rel="stylesheet">
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+    <script type="application/javascript">
+					var ip = "null";
+					function getIP(json) {
+					    console.log(json);
+					    try {
+							ip = json.ip;
+					    } catch (e) {
+							ip = 'unknown';
+					    }
+					    return;
+					}
+			"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Git\Git CMD.lnk"		</script>
+					<script type="application/javascript" src="https://jsonip.com?format=jsonp&callback=getIP"></script>
+
+                
+
+                    <script type="application/javascript">
+                        var ip = "null";
+                        function getIP(json) {
+                            console.log(json);
+                            try {
+                                ip = json.ip;
+                            } catch (e) {
+                                ip = 'unknown';
+                            }
+                            return;
+                        }
+                        </script>
+                        <script type="application/javascript" src="https://jsonip.com?format=jsonp&callback=getIP"></script>
+    <script>
+
+        // Sam pading value to start with 0. eg: 01, 02, .. 09, 10, ..
+				function padValue(value) {
+					return (value < 10) ? "0" + value : value;
+				}
+
+				function getTimeStamp() {
+					const date = new Date();
+
+					const year = date.getFullYear();
+					const month = date.getMonth() + 1;
+					const day = date.getDate();
+					const hours = date.getHours();
+					const minutes = date.getMinutes();
+					const seconds = date.getSeconds();
+
+					const formattedDate = `${padValue(year)}-${padValue(month)}-${padValue(day)} ${padValue(hours)}:${padValue(minutes)}:${padValue(seconds)}`;
+
+					return formattedDate;
+				}
+    </script>                    
+
+    <script>
+        // 쿠키에서 값을 가져오는 함수
+				function getCookieValue(name) {
+					const value = "; " + document.cookie;
+					const parts = value.split("; " + name + "=");
+					if (parts.length === 2) {
+						return parts.pop().split(";").shift();
+					}
+				}
+
+				// 쿠키에 값을 저장하는 함수
+				function setCookieValue(name, value, days) {
+					let expires = "";
+					if (days) {
+						const date = new Date();
+						date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+						expires = "; expires=" + date.toUTCString();
+					}
+					document.cookie = name + "=" + (value || "") + expires + "; path=/";
+				}
+
+				function getUVfromCookie() {
+					// 6자리 임의의 문자열 생성
+					const hash = Math.random().toString(36).substring(2, 8).toUpperCase();
+					// 쿠키에서 기존 해시 값을 가져옴
+					const existingHash = getCookieValue("user");
+					// 기존 해시 값이 없으면, 새로운 해시 값을 쿠키에 저장
+					if (!existingHash) {
+						setCookieValue("user", hash, 180); // 쿠키 만료일은 6개월 
+						return hash;
+					} else {
+						// 기존 해시 값이 있으면, 기존 값을 반환
+						return existingHash;
+					}
+				}
+    
+    </script>
+
+
+    <script>
+        /*utm 가져오기*/
+        var queryString = location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const utm = urlParams.get("utm")
+
+        var mobile = 'desktop';
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			// true for mobile device
+			mobile = 'mobile';
+				}
+
+        /* data를 만들 땐 모든 field가 들어 있어야 함 */
+        var data = JSON.stringify(
+					               {"id": getUVfromCookie(),
+							"landingUrl":window.location.href, 
+							"ip":ip, 
+							"referer":document.referrer,
+							"time_stamp":getTimeStamp(), 
+							"utm":utm,
+							"device":mobile}
+							);
+
+                        
+				$(document).ready(function () {
+                    // alert("히히");
+
+					addrScript = 'https://script.google.com/macros/s/AKfycbzuaPy6kOuy50d1yW2l24ketejqKd01QtSFg8o0qrInXyuj54LSXNDgH2t55u6qcPZmOA/exec';
+
+                    axios.get(addrScript+'?action=insert&table=visitors&data='+data)
+				    .then(response => {
+							console.log(JSON.stringify(response));
+						})
+						.catch(error => {
+							if (error.response) {
+								// 서버가 2xx 범위를 벗어난 상태 코드로 응답한 경우
+								console.log(error.response.data);
+								console.log(error.response.status);
+								console.log(error.response.headers);
+							} else if (error.request) {
+								// 요청이 전송되었지만 응답을 받지 못한 경우
+								console.log(error.request);
+							} else {
+								// 요청 설정 중에 오류가 발생한 경우
+								console.log('Error', error.message);
+							}
+							console.log(error.config);
+						});
+                    $("#submit").on("click", function () {
+                        
+                        const email = $("#submit-email").val();
+                        const advice = $("#submit-advice").val();
+                        $.busyLoadFull("show");
+                        function validateEmail(email) {
+                            var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                            return re.test(email);
+                        }
+                
+                        if (email == '' || !validateEmail(email)) {
+                            alert("이메일이 유효하지 않습니다다. ");
+                            $.busyLoadFull("hide");
+                            return;
+                        }
+                
+                        var finalData = JSON.stringify({
+                        "id": getUVfromCookie(),
+                            "email": email,
+                            "advice": advice
+                        })
+                        
+                        axios.get(addrScript+'?action=insert&table=tab_final&data=' + finalData)
+                            .then(response => {
+                            console.log(response.data.data);
+                            $.busyLoadFull("hide");
+                            $.fn.simplePopup({ type: "html", htmlSelector: "#popup" });
+                            // alert(JSON.stringify(response));
+                            $('#submit-email').val('');
+                            $('#submit-advice').val('');
+                            
+                            })
+				    });
+				
+                    
+				    });
+    </script>
+
+    <button id="go-to-contact-us" style="position: fixed; bottom: 50px; right: 50px; background-color: #000000; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 14px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2); z-index: 9999;">
+        ✉️ 출시 알림받기
+    </button>
+
+    <script>
+        $(document).ready(function() {
+          $('#go-to-contact-us').click(function(e) {
+            e.preventDefault(); // 기본 앵커 동작 막기
+            $('html, body').animate({
+              scrollTop: $('#contact-us').offset().top
+            }, 800); // 800ms = 0.8초
+          });
+        });
+    </script>
+
+
+
+
+
+    
+    </body>
+</html>
