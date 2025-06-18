@@ -5,7 +5,7 @@
   <title>체육관 지도</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- autoload=false 설정 -->
-  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee50dcc6ebd34fa29fb9cca47fd1b052&autoload=false"></script>
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=&autoload=false"></script>
   <style>
     #map {
       width: 100%;
@@ -18,7 +18,6 @@
   <div id="map"></div>
 
   <script>
-    // SDK가 로드된 후 실행되도록 감싸줘야 함!
     kakao.maps.load(function () {
       const container = document.getElementById('map');
       const options = {
